@@ -7,7 +7,7 @@ interface IFormProps {
   addTodo: () => void;
 }
 
-const Form: FC<IFormProps> = ({ value, onChangeText, addTodo }) => {
+const Form = ({ value, onChangeText, addTodo }: IFormProps) => {
   return (
     <View style={styles.container}>
       <TextInput

@@ -9,7 +9,7 @@ interface IValues {
   value: string;
 }
 
-const App: FC = () => {
+const App = () => {
   const [value, setValue] = useState<string>('');
   const [todos, setTodos] = useState<IValues[]>([]);
 

@@ -9,7 +9,7 @@ interface ITodo {
   deleteTodo: (id: number) => void;
 }
 
-const Todo: FC<ITodo> = ({ todo, deleteTodo }) => {
+const Todo = ({ todo, deleteTodo }: ITodo) => {
   return (
     <Pressable
       style={styles.todo}
